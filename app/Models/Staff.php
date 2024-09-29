@@ -13,4 +13,8 @@ class Staff extends Model
     {
         return $this->hasMany(Attendance::class);
     }
+    public function department()
+    {
+        return $this->belongsTo(Department::class);
+    }
 }
